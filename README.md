@@ -2,8 +2,8 @@
 
 > *"Training world models over word models."* — Saining Xie (谢赛宁), founding manifesto of AMI Labs
 
-![papers](https://img.shields.io/badge/papers_mapped-34-blue)
-![great](https://img.shields.io/badge/he_calls_great-16-gold)
+![works](https://img.shields.io/badge/works_mapped-33-blue)
+![great](https://img.shields.io/badge/Saining_calls_great-16-gold)
 ![interview](https://img.shields.io/badge/source-6h45m_interview-red)
 ![method](https://img.shields.io/badge/built_from-verbatim_transcript-brightgreen)
 ![license](https://img.shields.io/badge/license-CC_BY_4.0-lightgrey)
