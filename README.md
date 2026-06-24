@@ -221,9 +221,13 @@ Use a powerful pretrained representation as the generative model's encoder/found
 - **The Bitter Lesson** (Sutton, 2019 essay) — Xie's provocation: *"LLMs are anti–Bitter Lesson."* [essay](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) · ▶ [4:10:33](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15033)
 - **JEPA** (LeCun) — *A Path Towards Autonomous Machine Intelligence*; "from doubting JEPA, to understanding it, to becoming it." [paper](https://openreview.net/forum?id=BZ5a1r-kVsf) · ▶ [6:03:10](https://www.bilibili.com/video/BV1tew5zVEDf/?t=21790)
 - **Genie** (DeepMind) — an interactive, generative world model. [arXiv](https://arxiv.org/abs/2402.15391) · ▶ [4:26:52](https://www.bilibili.com/video/BV1tew5zVEDf/?t=16012)
+  <br><img src="assets/figures/genie.png" alt="genie" width="460">
 - **U-Net** — the architecture DiT replaced. [arXiv](https://arxiv.org/abs/1505.04597) · ▶ [3:04:00](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11040)
+  <br><img src="assets/figures/unet.png" alt="unet" width="460">
 - **CPC** — Contrastive Predictive Coding. [arXiv](https://arxiv.org/abs/1807.03748) · ▶ [2:00:27](https://www.bilibili.com/video/BV1tew5zVEDf/?t=7227)
+  <br><img src="assets/figures/cpc.png" alt="cpc" width="460">
 - **Mask R-CNN / Focal Loss** (Girshick's line; mentioned, not in Tier 1). [Mask](https://arxiv.org/abs/1703.06870) · [Focal](https://arxiv.org/abs/1708.02002) · ▶ [2:34:49](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9289)
+  <br><img src="assets/figures/maskrcnn.png" alt="maskrcnn" width="460">
 
 **Contemporary systems / tools name-dropped**
 Sora ([openai.com/sora](https://openai.com/sora), cites his DiT) · SeeDance · Nano Banana · Gemini / ChatGPT · a video model likely **Veo** · **PyTorch** ([pytorch.org](https://pytorch.org))

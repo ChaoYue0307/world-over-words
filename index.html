@@ -176,7 +176,7 @@
   <section id="tier3">
     <div class="sec-head"><h2>Tier 3 — Other works &amp; systems referenced</h2><span class="pill blue">RL · world models · systems</span></div>
     <p class="sec-desc">Mentioned in passing or as influences — the RL &amp; world-model lineage, contemporary systems, and concepts.</p>
-    <div class="list" id="grid3"></div>
+    <div class="grid" id="grid3"></div>
     <div class="chips" style="margin-top:18px">
       <span class="row" style="min-width:auto"><b>Systems:</b> <span class="m">Sora · SeeDance · Nano Banana · Gemini / ChatGPT · likely Veo · PyTorch</span></span>
       <span class="row" style="min-width:auto"><b>Concepts:</b> <span class="m">Neural Architecture Search · Scaling Law · Marr Prize nomination</span></span>
@@ -237,13 +237,13 @@ const tier2=[
  {t:"RAE — Representation Autoencoder",m:"2025",d:"Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the ‘representation-first’ thesis one step further.",u:"https://arxiv.org/abs/2510.11690",ts:"4:02:48",s:14568}
 ];
 const tier3=[
- {t:"Dyna",m:"Sutton, 1991 — model-based RL",u:"https://dl.acm.org/doi/10.1145/122344.122377",ts:"4:15:20",s:15320},
- {t:"The Bitter Lesson",m:"Sutton, 2019 essay — “LLMs are anti–Bitter Lesson”",u:"http://www.incompleteideas.net/IncIdeas/BitterLesson.html",ts:"4:10:33",s:15033},
- {t:"JEPA",m:"LeCun — A Path Towards Autonomous Machine Intelligence",u:"https://openreview.net/forum?id=BZ5a1r-kVsf",ts:"6:03:10",s:21790},
- {t:"Genie",m:"DeepMind — interactive world model",u:"https://arxiv.org/abs/2402.15391",ts:"4:26:52",s:16012},
- {t:"U-Net",m:"the architecture DiT replaced",u:"https://arxiv.org/abs/1505.04597",ts:"3:04:00",s:11040},
- {t:"CPC",m:"Contrastive Predictive Coding",u:"https://arxiv.org/abs/1807.03748",ts:"2:00:27",s:7227},
- {t:"Mask R-CNN / Focal Loss",m:"Girshick's detection line",u:"https://arxiv.org/abs/1703.06870",ts:"2:34:49",s:9289}
+ {t:"Dyna",m:"Sutton, 1991",d:"Sutton's model-based RL architecture — learn a world model and plan with it. The reactive vs. model-based “System 1 / System 2” framing Xie invokes.",u:"https://dl.acm.org/doi/10.1145/122344.122377",ts:"4:15:20",s:15320},
+ {t:"The Bitter Lesson",m:"Sutton, 2019 · essay",d:"General methods that scale with compute beat hand-crafted knowledge. Xie's foil — he argues LLMs are “anti–Bitter Lesson.”",u:"http://www.incompleteideas.net/IncIdeas/BitterLesson.html",ts:"4:10:33",s:15033},
+ {t:"JEPA",m:"LeCun, 2022",d:"LeCun's blueprint for autonomous machine intelligence — predict in abstract representation space, not pixels or tokens. AMI Labs' north star.",u:"https://openreview.net/forum?id=BZ5a1r-kVsf",ts:"6:03:10",s:21790},
+ {t:"Genie",m:"DeepMind, 2024",d:"A foundation world model trained from unlabeled internet videos that generates playable, interactive environments.",u:"https://arxiv.org/abs/2402.15391",ts:"4:26:52",s:16012,img:"assets/figures/genie.png"},
+ {t:"U-Net",m:"Ronneberger et al., 2015",d:"Encoder–decoder with skip connections for image-to-image tasks — the diffusion backbone DiT replaced.",u:"https://arxiv.org/abs/1505.04597",ts:"3:04:00",s:11040,img:"assets/figures/unet.png"},
+ {t:"CPC",m:"van den Oord et al., 2018",d:"Contrastive Predictive Coding — learn representations by predicting the future in a latent space; an early self-supervised milestone.",u:"https://arxiv.org/abs/1807.03748",ts:"2:00:27",s:7227,img:"assets/figures/cpc.png"},
+ {t:"Mask R-CNN / Focal Loss",m:"He / Lin et al., 2017",d:"Girshick's detection line — instance segmentation (Mask R-CNN) and dense detection (Focal Loss / RetinaNet).",u:"https://arxiv.org/abs/1703.06870",ts:"2:34:49",s:9289,img:"assets/figures/maskrcnn.png"}
 ];
 
 const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa","Transformer — Attention Is All You Need":"transformer","GPT-3":"gpt3","AlexNet":"alexnet","Cambrian-1":"cambrian","RAE — Representation Autoencoder":"rae","LeNet":"lenet","ImageNet":"imagenet"};
@@ -264,7 +264,7 @@ function row(p){
 }
 document.getElementById('grid1').innerHTML=tier1.map(p=>card(p,'t1')).join('');
 document.getElementById('grid2').innerHTML=tier2.map(p=>card(p,'t2')).join('');
-document.getElementById('grid3').innerHTML=tier3.map(row).join('');
+document.getElementById('grid3').innerHTML=tier3.map(p=>card(p,'t3')).join('');
 
 const search=document.getElementById('search'), count=document.getElementById('count');
 const items=[...document.querySelectorAll('[data-x]')];
