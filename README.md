@@ -44,104 +44,138 @@ Saining's own spontaneous enumeration of the deep-learning canon (*"我可能数
 
 ### 1. LeNet · *LeCun et al., 1998*
 
-<img src="assets/figures/lenet.png" alt="lenet — Figure" width="540">
+<p align="center"><img src="assets/figures/lenet.png" alt="LeNet" width="500"></p>
+
 The first convolutional neural network trained end-to-end with backpropagation, built to read handwritten digits (famously deployed on bank checks). It introduced the conv → pool → conv stack that every modern vision model still echoes — arriving a decade before the data and GPUs that would finally make it shine.
+
 📄 [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 2. AlexNet · *Krizhevsky, Sutskever, Hinton, 2012*
 
-<img src="assets/figures/alexnet.png" alt="alexnet — Figure" width="540">
+<p align="center"><img src="assets/figures/alexnet.png" alt="AlexNet" width="500"></p>
+
 Widely credited with sparking the modern deep-learning boom. Winning ImageNet 2012 by a wide margin — using GPUs, ReLUs and dropout — it convinced the field that learned deep features, not hand-crafted ones, were the future.
+
 📄 [paper](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 3. ImageNet · *Deng … Fei-Fei, 2009*
 
-<img src="assets/figures/imagenet.png" alt="imagenet — Figure" width="540">
+<p align="center"><img src="assets/figures/imagenet.png" alt="ImageNet (ILSVRC error over time)" width="500"></p>
+
 Not a model but the dataset that made everything else possible: ~14M human-labeled images across 1000+ categories. Fei-Fei Li's bet that **data**, not just algorithms, was the real bottleneck — and the benchmark that drove a decade of progress.
+
 📄 [paper](https://ieeexplore.ieee.org/document/5206848) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 4. ResNet · *He et al., 2016*
 
-<img src="assets/figures/resnet.png" alt="resnet — Figure 1" width="540">
+<p align="center"><img src="assets/figures/resnet.png" alt="ResNet" width="500"></p>
+
 Residual ("skip") connections fixed the vanishing-gradient problem and let networks scale to 100–1000+ layers. One of the most-cited papers in all of science, the default vision backbone for years, and the conceptual ancestor of the residual stream inside Transformers.
+
 📄 [paper](https://arxiv.org/abs/1512.03385) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 5. R-CNN · *Girshick et al., 2014*
 
-<img src="assets/figures/rcnn.png" alt="rcnn — Figure 1" width="540">
+<p align="center"><img src="assets/figures/rcnn.png" alt="R-CNN" width="500"></p>
+
 Brought CNN features to object detection — region proposals scored by a CNN. The recipe that launched the modern detection pipeline behind self-driving and medical imaging.
+
 📄 [paper](https://arxiv.org/abs/1311.2524) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 6. Fast R-CNN · *Girshick, 2015*
 
-<img src="assets/figures/fastrcnn.png" alt="fastrcnn — Figure 1" width="540">
+<p align="center"><img src="assets/figures/fastrcnn.png" alt="Fast R-CNN" width="500"></p>
+
 Made R-CNN end-to-end and far faster — a single pass over the image with RoI pooling, jointly predicting class and box. The basis for Faster R-CNN and Mask R-CNN.
+
 📄 [paper](https://arxiv.org/abs/1504.08083) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 7. Transformer — *Attention Is All You Need* · *Vaswani et al., 2017*
 
-<img src="assets/figures/transformer.png" alt="transformer — Figure" width="540">
+<p align="center"><img src="assets/figures/transformer.png" alt="Transformer" width="500"></p>
+
 Threw out recurrence and convolution, keeping only attention. It made training massively parallel and is the single architecture beneath GPT, BERT, CLIP, ViT and diffusion models — most of today's frontier AI.
+
 📄 [paper](https://arxiv.org/abs/1706.03762) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 8. Attention · *Bahdanau, Cho & Bengio, 2014* ⚠️ *garbled in transcript — see [decoding](#-decoding-the-garbled-names)*
 
-<img src="assets/figures/attention.png" alt="attention — Figure 1" width="540">
+<p align="center"><img src="assets/figures/attention.png" alt="Attention" width="500"></p>
+
 Introduced the attention mechanism for neural machine translation: instead of cramming a sentence into one vector, let the model "look back" at the relevant words. The seed idea that Transformers later scaled into everything.
+
 📄 [paper](https://arxiv.org/abs/1409.0473) · ▶ [~2:22:04](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8524)
 
 ### 9. GPT-3 · *Brown et al., 2020*
 
-<img src="assets/figures/gpt3.png" alt="gpt3 — Figure" width="540">
+<p align="center"><img src="assets/figures/gpt3.png" alt="GPT-3" width="500"></p>
+
 At 175B parameters, it showed that scale alone unlocks emergent few-shot ability: describe a task in the prompt and the model just does it. The empirical proof of the scaling-law thesis and the direct ancestor of ChatGPT.
+
 📄 [paper](https://arxiv.org/abs/2005.14165) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 10. BERT · *Devlin et al., 2018*
 
-<img src="assets/figures/bert.png" alt="bert — Figure 1" width="540">
+<p align="center"><img src="assets/figures/bert.png" alt="BERT" width="500"></p>
+
 Bidirectional masked-language pretraining — hide words, predict them from both sides. It advanced the state of the art across NLP, made "pretrain then fine-tune" standard, and directly inspired Saining's own MAE for images.
+
 📄 [paper](https://arxiv.org/abs/1810.04805) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 11. CLIP · *Radford et al., 2021*
 
-<img src="assets/figures/clip.png" alt="clip — Figure 1" width="540">
+<p align="center"><img src="assets/figures/clip.png" alt="CLIP" width="500"></p>
+
 Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era. (Saining also notes its blind spots at 3:18.)
+
 📄 [paper](https://arxiv.org/abs/2103.00020) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 12. ViT — Vision Transformer · *Dosovitskiy et al., 2020*
 
-<img src="assets/figures/vit.png" alt="vit — Figure 1" width="540">
+<p align="center"><img src="assets/figures/vit.png" alt="ViT" width="500"></p>
+
 Showed that a plain Transformer, fed image patches as tokens, beats CNNs once data and compute are large enough — unifying vision and language under one architecture.
+
 📄 [paper](https://arxiv.org/abs/2010.11929) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
 ### 13. GAN · *Goodfellow et al., 2014*
 
-<img src="assets/figures/gan.png" alt="gan — Figure 1" width="540">
+<p align="center"><img src="assets/figures/gan.png" alt="GAN" width="500"></p>
+
 A generator and a discriminator locked in a minimax game. The framework that first made photorealistic synthesis possible and dominated generative modeling before diffusion.
+
 📄 [paper](https://arxiv.org/abs/1406.2661) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
 ### 14. NeRF · *Mildenhall et al., 2020*
 
-<img src="assets/figures/nerf.png" alt="nerf — Figure 1" width="540">
+<p align="center"><img src="assets/figures/nerf.png" alt="NeRF" width="500"></p>
+
 Represents a 3D scene as a tiny neural network of color and density, rendering photorealistic novel viewpoints from a handful of photos. Reignited neural 3D and inverse graphics.
+
 📄 [paper](https://arxiv.org/abs/2003.08934) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
 ### 15. 3D Gaussian Splatting · *Kerbl et al., 2023*
 
-<img src="assets/figures/gsplat.png" alt="gsplat — Figure 1" width="540">
+<p align="center"><img src="assets/figures/gsplat.png" alt="3D Gaussian Splatting" width="500"></p>
+
 Replaces NeRF's slow volumetric sampling with millions of optimized 3D Gaussians, hitting real-time, high-fidelity rendering — quickly the new default for neural 3D.
+
 📄 [paper](https://arxiv.org/abs/2308.04079) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
 ### 16. Diffusion / DDPM · *Ho, Jain, Abbeel, 2020*
 
-<img src="assets/figures/ddpm.png" alt="ddpm — Figure 1" width="540">
+<p align="center"><img src="assets/figures/ddpm.png" alt="Diffusion (DDPM)" width="500"></p>
+
 Generate by learning to **reverse** a gradual noising process. DDPM made diffusion practical and surpassed GANs in quality and stability — the engine behind today's image and video generators.
+
 📄 [paper](https://arxiv.org/abs/2006.11239) · ▶ [2:21:09](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8469)
 
 ### 17. Stable Diffusion / LDM · *Rombach et al., 2022*
 
-<img src="assets/figures/ldm.png" alt="ldm — Figure 1" width="540">
+<p align="center"><img src="assets/figures/ldm.png" alt="Stable Diffusion (LDM)" width="500"></p>
+
 Ran diffusion in a compressed **latent** space, cutting cost enough to make high-resolution generation fast — and, by open-sourcing it, kicked off the consumer generative-AI wave.
+
 📄 [paper](https://arxiv.org/abs/2112.10752) · ▶ [3:07:38](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11258)
 
 ---
@@ -160,62 +194,82 @@ Discussed in depth, but **Saining keeps these out of the "great" tier** (he rate
 
 ### Deeply-Supervised Nets (DSN) · *2015*
 
-<img src="assets/figures/dsn.png" alt="dsn — Figure 1" width="540">
+<p align="center"><img src="assets/figures/dsn.png" alt="Deeply-Supervised Nets" width="500"></p>
+
 "Deep supervision" — attach classifiers/losses to intermediate layers so gradients reach early ones directly. A recurring motif in his work; he notes REPA is structurally a deeply-supervised net.
+
 📄 [arXiv](https://arxiv.org/abs/1409.5185) · ▶ [0:48:53](https://www.bilibili.com/video/BV1tew5zVEDf/?t=2933)
 
 ### HED — Holistically-Nested Edge Detection · *2015*
 
-<img src="assets/figures/hed.png" alt="hed — Figure 1" width="540">
+<p align="center"><img src="assets/figures/hed.png" alt="HED" width="500"></p>
+
 Reframed edge detection as image-to-image prediction with multi-scale deep supervision, setting a new bar. The PhD work he says he's "proud of."
+
 📄 [arXiv](https://arxiv.org/abs/1504.06375) · ▶ [0:48:28](https://www.bilibili.com/video/BV1tew5zVEDf/?t=2908)
 
 ### ResNeXt · *2017*
 
-<img src="assets/figures/resnext.png" alt="resnext — Figure 1" width="540">
+<p align="center"><img src="assets/figures/resnext.png" alt="ResNeXt" width="500"></p>
+
 Added "cardinality" — parallel grouped transformations — as a new scaling axis beyond depth and width. Kaiming He named it ("X = next, the next-gen ResNet"); it placed 2nd in the ImageNet challenge.
+
 📄 [arXiv](https://arxiv.org/abs/1611.05431) · ▶ [1:00:39](https://www.bilibili.com/video/BV1tew5zVEDf/?t=3639)
 
 ### DiT — Diffusion Transformers · *2023* · *self-rated "0.25"*
 
-<img src="assets/figures/dit.png" alt="dit — Figure 1" width="540">
+<p align="center"><img src="assets/figures/dit.png" alt="DiT" width="500"></p>
+
 Replaced the U-Net in diffusion with a Transformer, so image generators inherit the clean scaling behavior of LLMs. The backbone behind Sora and modern video models.
+
 📄 [arXiv](https://arxiv.org/abs/2212.09748) · ▶ [2:20:41](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8441)
 
 ### SiT — Scalable Interpolant Transformers · *2024*
 
-<img src="assets/figures/sit.png" alt="sit — Figure 1" width="540">
+<p align="center"><img src="assets/figures/sit.png" alt="SiT" width="500"></p>
+
 Recasts DiT through stochastic interpolants / flow matching — a more flexible, often better-performing training formulation, now a common academic baseline alongside DiT.
+
 📄 [arXiv](https://arxiv.org/abs/2401.08740) · ▶ [3:15:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11725)
 
 ### MoCo — Momentum Contrast · *2020*
 
-<img src="assets/figures/moco.png" alt="moco — Figure 1" width="540">
+<p align="center"><img src="assets/figures/moco.png" alt="MoCo" width="500"></p>
+
 Built a large, consistent dictionary for contrastive self-supervised learning — the first time self-supervised features rivaled supervised ImageNet pretraining on vision tasks. (Kaiming He–led; Saining is a co-author.)
+
 📄 [arXiv](https://arxiv.org/abs/1911.05722) · ▶ [2:25:59](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8759)
 
 ### MAE — Masked Autoencoders · *2022*
 
-<img src="assets/figures/mae.png" alt="mae — Figure 1" width="540">
+<p align="center"><img src="assets/figures/mae.png" alt="MAE" width="500"></p>
+
 Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe that brought BERT's idea to vision. (Kaiming He–led; Saining is a co-author.)
+
 📄 [arXiv](https://arxiv.org/abs/2111.06377) · ▶ [2:26:45](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8805)
 
 ### Cambrian-1 · *2024*
 
-<img src="assets/figures/cambrian.png" alt="cambrian — Figure" width="540">
+<p align="center"><img src="assets/figures/cambrian.png" alt="Cambrian-1" width="500"></p>
+
 A vision-centric multimodal LLM and a study of how visual representations should connect to language models — Saining's argument that vision deserves first-class treatment, not a bolt-on.
+
 📄 [arXiv](https://arxiv.org/abs/2406.16860) · ▶ [3:15:51](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11751)
 
 ### REPA — Representation Alignment · *2025*
 
-<img src="assets/figures/repa.png" alt="repa — Figure 1" width="540">
+<p align="center"><img src="assets/figures/repa.png" alt="REPA" width="500"></p>
+
 Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding up training. "Another keyword: representation," as Saining puts it.
+
 📄 [arXiv](https://arxiv.org/abs/2410.06940) · ▶ [4:01:06](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14466)
 
 ### RAE — Representation Autoencoder · *2025*
 
-<img src="assets/figures/rae.png" alt="rae — Figure" width="540">
+<p align="center"><img src="assets/figures/rae.png" alt="Representation Autoencoder" width="500"></p>
+
 Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the "representation-first" thesis one step further.
+
 📄 [arXiv](https://arxiv.org/abs/2510.11690) · ▶ [4:02:48](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14568)
 
 ---
@@ -224,21 +278,21 @@ Use a powerful pretrained representation as the generative model's encoder/found
 
 **RL & world-model lineage**
 - **Dyna** (Sutton, 1991) — model-based RL; the reactive vs. model-based "System 1 / System 2" framing. [ACM](https://dl.acm.org/doi/10.1145/122344.122377) · ▶ [4:15:20](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15320)
-  <br><img src="assets/figures/dyna.png" alt="dyna" width="460">
+  <br><img src="assets/figures/dyna.png" alt="Richard Sutton" width="470">
 - **The Bitter Lesson** (Sutton, 2019 essay) — Saining's provocation: *"LLMs are anti–Bitter Lesson."* [essay](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) · ▶ [4:10:33](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15033)
-  <br><img src="assets/figures/bitter.png" alt="bitter" width="460">
+  <br><img src="assets/figures/bitter.png" alt="Richard Sutton" width="470">
 - **JEPA** (LeCun) — *A Path Towards Autonomous Machine Intelligence*; "from doubting JEPA, to understanding it, to becoming it." [paper](https://openreview.net/forum?id=BZ5a1r-kVsf) · ▶ [6:03:10](https://www.bilibili.com/video/BV1tew5zVEDf/?t=21790)
-  <br><img src="assets/figures/jepa.png" alt="jepa" width="460">
+  <br><img src="assets/figures/jepa.png" alt="JEPA (I-JEPA)" width="470">
 - **Genie** (DeepMind) — an interactive, generative world model. [arXiv](https://arxiv.org/abs/2402.15391) · ▶ [4:26:52](https://www.bilibili.com/video/BV1tew5zVEDf/?t=16012)
-  <br><img src="assets/figures/genie.png" alt="genie" width="460">
+  <br><img src="assets/figures/genie.png" alt="Genie" width="470">
 - **U-Net** — the architecture DiT replaced. [arXiv](https://arxiv.org/abs/1505.04597) · ▶ [3:04:00](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11040)
-  <br><img src="assets/figures/unet.png" alt="unet" width="460">
+  <br><img src="assets/figures/unet.png" alt="U-Net" width="470">
 - **CPC** — Contrastive Predictive Coding. [arXiv](https://arxiv.org/abs/1807.03748) · ▶ [2:00:27](https://www.bilibili.com/video/BV1tew5zVEDf/?t=7227)
-  <br><img src="assets/figures/cpc.png" alt="cpc" width="460">
+  <br><img src="assets/figures/cpc.png" alt="CPC" width="470">
 - **Mask R-CNN** (He et al., 2017) — pixel-level instance segmentation. [arXiv](https://arxiv.org/abs/1703.06870) · ▶ [2:34:49](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9289)
-  <br><img src="assets/figures/maskrcnn.png" alt="maskrcnn" width="460">
+  <br><img src="assets/figures/maskrcnn.png" alt="Mask R-CNN" width="470">
 - **Focal Loss** (Lin et al., 2017) — down-weights easy examples for dense detection (RetinaNet). [arXiv](https://arxiv.org/abs/1708.02002) · ▶ [2:34:56](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9296)
-  <br><img src="assets/figures/focalloss.png" alt="focalloss" width="460">
+  <br><img src="assets/figures/focalloss.png" alt="Focal Loss" width="470">
 
 **Contemporary systems / tools name-dropped**
 Sora ([openai.com/sora](https://openai.com/sora), cites his DiT) · SeeDance · Nano Banana · Gemini / ChatGPT · a video model likely **Veo** · **PyTorch** ([pytorch.org](https://pytorch.org))
