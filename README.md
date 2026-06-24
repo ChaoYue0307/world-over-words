@@ -29,6 +29,15 @@ Every **▶ timestamp** below deep-links into the video at that exact second.
 
 ---
 
+## 👥 The people
+
+- **Saining Xie (谢赛宁)** — co-founder & Chief Scientist, AMI Labs; faculty at NYU.
+  [🌐 sainingxie.com](https://www.sainingxie.com/) · [𝕏 @sainingxie](https://x.com/sainingxie) · [GitHub @s9xie](https://github.com/s9xie)
+- **Zhang Xiaojun (张小珺)** — award-winning tech journalist; host of 《商业访谈录》, founder of "语言即世界" studio.
+  [𝕏 @zhang_benita](https://x.com/zhang_benita) · [▶ YouTube @benitazxj](https://www.youtube.com/@benitazxj)
+
+---
+
 ## ⭐ Tier 1 — Papers he explicitly calls GREAT (代表作)
 
 His own spontaneous enumeration of the deep-learning canon (*"我可能数不全"* — "I can't list them all"). He pointedly keeps **his own** work out of this tier: asked *"DiT 不算吗?"* he answers *"算 0.25"* — only a quarter.
