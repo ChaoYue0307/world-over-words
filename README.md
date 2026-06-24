@@ -55,10 +55,14 @@ Not a model but the dataset that made everything else possible: ~14M human-label
 📄 [paper](https://ieeexplore.ieee.org/document/5206848) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 4. ResNet · *He et al., 2016*
+
+<img src="assets/figures/resnet.png" alt="resnet — Figure 1" width="540">
 Residual ("skip") connections fixed the vanishing-gradient problem and let networks scale to 100–1000+ layers. One of the most-cited papers in all of science, the default vision backbone for years, and the conceptual ancestor of the residual stream inside Transformers.
 📄 [paper](https://arxiv.org/abs/1512.03385) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 5. R-CNN / Fast R-CNN · *Girshick et al., 2014–15*
+
+<img src="assets/figures/rcnn.png" alt="rcnn — Figure 1" width="540">
 Brought CNN features to object detection — *where* + *what*, not just *what*. The "regions + CNN" recipe and its faster successors launched the modern detection pipeline behind autonomous driving, medical imaging and more.
 📄 [paper](https://arxiv.org/abs/1311.2524) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
@@ -67,6 +71,8 @@ Threw out recurrence and convolution, keeping only attention. It made training m
 📄 [paper](https://arxiv.org/abs/1706.03762) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 7. Attention · *Bahdanau, Cho & Bengio, 2014* ⚠️ *garbled in transcript — see [decoding](#-decoding-the-garbled-names)*
+
+<img src="assets/figures/attention.png" alt="attention — Figure 1" width="540">
 Introduced the attention mechanism for neural machine translation: instead of cramming a sentence into one vector, let the model "look back" at the relevant words. The seed idea that Transformers later scaled into everything.
 📄 [paper](https://arxiv.org/abs/1409.0473) · ▶ [~2:22:04](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8524)
 
@@ -75,34 +81,50 @@ At 175B parameters, it showed that scale alone unlocks emergent few-shot ability
 📄 [paper](https://arxiv.org/abs/2005.14165) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 9. BERT · *Devlin et al., 2018*
+
+<img src="assets/figures/bert.png" alt="bert — Figure 1" width="540">
 Bidirectional masked-language pretraining — hide words, predict them from both sides. It shattered NLP benchmarks, made "pretrain then fine-tune" standard, and directly inspired Xie's own MAE for images.
 📄 [paper](https://arxiv.org/abs/1810.04805) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 10. CLIP · *Radford et al., 2021*
+
+<img src="assets/figures/clip.png" alt="clip — Figure 1" width="540">
 Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era. (Xie also notes its blind spots at 3:18.)
 📄 [paper](https://arxiv.org/abs/2103.00020) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
-### 11. ViT — Vision Transformer · *Dosovitskiy et al., 2020* ⚠️ *said as "VIP", then reclarified*
+### 11. ViT — Vision Transformer · *Dosovitskiy et al., 2020*
+
+<img src="assets/figures/vit.png" alt="vit — Figure 1" width="540">
 Showed that a plain Transformer, fed image patches as tokens, beats CNNs once data and compute are large enough — unifying vision and language under one architecture.
 📄 [paper](https://arxiv.org/abs/2010.11929) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
 ### 12. GAN · *Goodfellow et al., 2014*
+
+<img src="assets/figures/gan.png" alt="gan — Figure 1" width="540">
 A generator and a discriminator locked in a minimax game. The framework that first made photorealistic synthesis possible and dominated generative modeling before diffusion.
 📄 [paper](https://arxiv.org/abs/1406.2661) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
 ### 13. NeRF · *Mildenhall et al., 2020*
+
+<img src="assets/figures/nerf.png" alt="nerf — Figure 1" width="540">
 Represents a 3D scene as a tiny neural network of color and density, rendering photorealistic novel viewpoints from a handful of photos. Reignited neural 3D and inverse graphics.
 📄 [paper](https://arxiv.org/abs/2003.08934) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
 ### 14. 3D Gaussian Splatting · *Kerbl et al., 2023*
+
+<img src="assets/figures/gsplat.png" alt="gsplat — Figure 1" width="540">
 Replaces NeRF's slow volumetric sampling with millions of optimized 3D Gaussians, hitting real-time, high-fidelity rendering — quickly the new default for neural 3D.
 📄 [paper](https://arxiv.org/abs/2308.04079) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
 ### 15. Diffusion / DDPM · *Ho, Jain, Abbeel, 2020*
+
+<img src="assets/figures/ddpm.png" alt="ddpm — Figure 1" width="540">
 Generate by learning to **reverse** a gradual noising process. DDPM made diffusion practical and surpassed GANs in quality and stability — the engine behind today's image and video generators.
 📄 [paper](https://arxiv.org/abs/2006.11239) · ▶ [2:21:09](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8469)
 
 ### 16. Stable Diffusion / LDM · *Rombach et al., 2022*
+
+<img src="assets/figures/ldm.png" alt="ldm — Figure 1" width="540">
 Ran diffusion in a compressed **latent** space, cutting cost enough to make high-resolution generation fast — and, by open-sourcing it, kicked off the consumer generative-AI wave.
 📄 [paper](https://arxiv.org/abs/2112.10752) · ▶ [3:07:38](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11258)
 
@@ -112,7 +134,6 @@ Ran diffusion in a compressed **latent** space, cutting cost enough to make high
 
 The interview is Chinese with English terms mixed in, and the auto-transcription mangled two paper names. Both are decoded here with evidence:
 
-- **"VIP" (2:22:14) → ViT.** *Certain.* The same transcript spells it **"VIT"** correctly at 2:58:26, 3:03:53 and 3:04:00; here it garbled the acronym, and Xie immediately reclarifies "Vision Transformer." A duplicate, not a separate paper.
 - **"Tension Solution Unit" (~2:22:04) → an attention paper.** *High confidence on "attention," medium on the exact paper.* This transcript reliably renders **self-attention as "software attention" / "Software Tension"** (2:58:30, 2:58:45) — so **"Tension" = attention**. Since Xie lists *Transformer* separately at #6, the best fit is the original attention paper, **Bahdanau et al. 2014**. ⚠️ Confirm by ear at **~2:22:04–2:22:06** — issues/PRs welcome.
 
 ---
@@ -122,30 +143,44 @@ The interview is Chinese with English terms mixed in, and the auto-transcription
 Discussed in depth, but **he keeps these out of the "great" tier** (he rates DiT "0.25").
 
 ### Deeply-Supervised Nets (DSN) · *2015*
+
+<img src="assets/figures/dsn.png" alt="dsn — Figure 1" width="540">
 "Deep supervision" — attach classifiers/losses to intermediate layers so gradients reach early ones directly. A recurring motif in his work; he notes REPA is structurally a deeply-supervised net.
 📄 [arXiv](https://arxiv.org/abs/1409.5185) · ▶ [0:48:53](https://www.bilibili.com/video/BV1tew5zVEDf/?t=2933)
 
 ### HED — Holistically-Nested Edge Detection · *2015*
+
+<img src="assets/figures/hed.png" alt="hed — Figure 1" width="540">
 Reframed edge detection as image-to-image prediction with multi-scale deep supervision, setting a new bar. The PhD work he says he's "proud of."
 📄 [arXiv](https://arxiv.org/abs/1504.06375) · ▶ [0:48:28](https://www.bilibili.com/video/BV1tew5zVEDf/?t=2908)
 
 ### ResNeXt · *2017*
+
+<img src="assets/figures/resnext.png" alt="resnext — Figure 1" width="540">
 Added "cardinality" — parallel grouped transformations — as a new scaling axis beyond depth and width. Kaiming He named it ("X = next, the next-gen ResNet"); it placed 2nd in the ImageNet challenge.
 📄 [arXiv](https://arxiv.org/abs/1611.05431) · ▶ [1:00:39](https://www.bilibili.com/video/BV1tew5zVEDf/?t=3639)
 
 ### DiT — Diffusion Transformers · *2023* · *self-rated "0.25"*
+
+<img src="assets/figures/dit.png" alt="dit — Figure 1" width="540">
 Replaced the U-Net in diffusion with a Transformer, so image generators inherit the clean scaling behavior of LLMs. The backbone behind Sora and modern video models — though he modestly downgrades it.
 📄 [arXiv](https://arxiv.org/abs/2212.09748) · ▶ [2:20:41](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8441)
 
 ### SiT — Scalable Interpolant Transformers · *2024*
+
+<img src="assets/figures/sit.png" alt="sit — Figure 1" width="540">
 Recasts DiT through stochastic interpolants / flow matching — a more flexible, often better-performing training formulation, now a common academic baseline alongside DiT.
 📄 [arXiv](https://arxiv.org/abs/2401.08740) · ▶ [3:15:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11725)
 
 ### MoCo — Momentum Contrast · *2020*
+
+<img src="assets/figures/moco.png" alt="moco — Figure 1" width="540">
 Built a large, consistent dictionary for contrastive self-supervised learning — the first time self-supervised features rivaled supervised ImageNet pretraining on vision tasks. (Kaiming-led; Xie co-author.)
 📄 [arXiv](https://arxiv.org/abs/1911.05722) · ▶ [2:25:59](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8759)
 
 ### MAE — Masked Autoencoders · *2022*
+
+<img src="assets/figures/mae.png" alt="mae — Figure 1" width="540">
 Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe that brought BERT's idea to vision. (Kaiming-led; Xie co-author.)
 📄 [arXiv](https://arxiv.org/abs/2111.06377) · ▶ [2:26:45](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8805)
 
@@ -154,6 +189,8 @@ A vision-centric multimodal LLM and a study of how visual representations should
 📄 [arXiv](https://arxiv.org/abs/2406.16860) · ▶ [3:15:51](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11751)
 
 ### REPA — Representation Alignment · *2025*
+
+<img src="assets/figures/repa.png" alt="repa — Figure 1" width="540">
 Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding up training. "Another keyword: representation," he laughs.
 📄 [arXiv](https://arxiv.org/abs/2410.06940) · ▶ [4:01:06](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14466)
 

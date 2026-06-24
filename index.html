@@ -76,6 +76,9 @@
   .card .num{font-size:12px;font-weight:700;color:var(--muted)}
   .card h3{margin:6px 0 2px;font-size:18px;font-weight:700;letter-spacing:-.01em}
   .card .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+  .thumb{display:block;margin:0 0 12px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+  .thumb img{display:block;width:100%;height:160px;object-fit:contain;background:#fff;padding:6px;transition:.18s}
+  .thumb:hover img{transform:scale(1.03)}
   .card .desc{font-size:14.5px;color:#d3dae8;flex:1}
   .card .flag{display:inline-block;margin-top:10px;font-size:12px;color:var(--gold);background:rgba(245,196,81,.1);border:1px solid rgba(245,196,81,.25);padding:3px 9px;border-radius:8px}
   .card .foot{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
@@ -159,8 +162,6 @@
   <section id="decode">
     <div class="sec-head"><h2>🔍 Decoding the garbled names</h2></div>
     <div class="callout">
-      <h3>"VIP" → ViT &nbsp;·&nbsp; certain</h3>
-      <p>The same transcript spells it <code>VIT</code> correctly at 2:58:26, 3:03:53 and 3:04:00. Here it garbled the acronym, and Xie immediately reclarifies "Vision Transformer." A duplicate, not a separate paper.</p>
       <h3>"Tension Solution Unit" → an attention paper &nbsp;·&nbsp; high confidence on "attention"</h3>
       <p>This transcript reliably renders <em>self-attention</em> as <code>software attention</code> / <code>Software Tension</code> (2:58:30, 2:58:45) — so <strong>"Tension" = attention</strong>. Since Transformer is listed separately, the best fit is the original attention paper, <strong>Bahdanau et al. 2014</strong>. ⚠️ Confirm by ear at <strong>~2:22:04</strong> — issues &amp; PRs welcome.</p>
     </div>
@@ -215,7 +216,7 @@ const tier1=[
  {n:8,t:"GPT-3",m:"Brown et al., 2020",d:"At 175B parameters it showed scale alone unlocks emergent few-shot ability — describe a task in the prompt and it just does it. The empirical proof of the scaling-law thesis and ancestor of ChatGPT.",u:"https://arxiv.org/abs/2005.14165",ts:"2:22:02",s:8522},
  {n:9,t:"BERT",m:"Devlin et al., 2018",d:"Bidirectional masked-language pretraining — hide words, predict them from both sides. It swept NLP, made ‘pretrain then fine-tune’ standard, and directly inspired Xie's own MAE for images.",u:"https://arxiv.org/abs/1810.04805",ts:"2:22:02",s:8522},
  {n:10,t:"CLIP",m:"Radford et al., 2021",d:"Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era.",u:"https://arxiv.org/abs/2103.00020",ts:"2:22:02",s:8522},
- {n:11,t:"ViT — Vision Transformer",m:"Dosovitskiy et al., 2020",d:"Showed a plain Transformer fed image patches as tokens beats CNNs once data and compute are large enough — unifying vision and language under one architecture.",u:"https://arxiv.org/abs/2010.11929",ts:"2:22:14",s:8534,flag:"⚠️ Said as “VIP”, then reclarified as Vision Transformer"},
+ {n:11,t:"ViT — Vision Transformer",m:"Dosovitskiy et al., 2020",d:"Showed a plain Transformer fed image patches as tokens beats CNNs once data and compute are large enough — unifying vision and language under one architecture.",u:"https://arxiv.org/abs/2010.11929",ts:"2:22:14",s:8534},
  {n:12,t:"GAN",m:"Goodfellow et al., 2014",d:"A generator and discriminator locked in a minimax game — the framework that first made photorealistic synthesis possible and dominated generative modeling before diffusion.",u:"https://arxiv.org/abs/1406.2661",ts:"2:22:14",s:8534},
  {n:13,t:"NeRF",m:"Mildenhall et al., 2020",d:"Represents a 3D scene as a tiny neural network of color and density, rendering photorealistic new viewpoints from a few photos. Reignited neural 3D and inverse graphics.",u:"https://arxiv.org/abs/2003.08934",ts:"2:22:25",s:8545},
  {n:14,t:"3D Gaussian Splatting",m:"Kerbl et al., 2023",d:"Swaps NeRF's slow volumetric sampling for millions of optimized 3D Gaussians, reaching real-time high-fidelity rendering — fast becoming the new default for neural 3D.",u:"https://arxiv.org/abs/2308.04079",ts:"2:22:25",s:8545},
@@ -244,12 +245,15 @@ const tier3=[
  {t:"Mask R-CNN / Focal Loss",m:"Girshick's detection line",u:"https://arxiv.org/abs/1703.06870",ts:"2:34:49",s:9289}
 ];
 
+const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa"};
+[...tier1,...tier2].forEach(p=>{const k=FIG[p.t];if(k)p.img="assets/figures/"+k+".png";});
 function card(p,tier){
   const flag=p.flag?`<span class="flag">${p.flag}</span>`:"";
   const num=p.n?`<div class="num">#${p.n}</div>`:"";
+  const im=p.img?`<a class="thumb" href="${p.u}" target="_blank" rel="noopener"><img loading="lazy" src="${p.img}" alt="${p.t} — figure"></a>`:"";
   return `<article class="card ${tier}" data-x="${(p.t+' '+p.m+' '+p.d).toLowerCase()}">
     ${num}<h3>${p.t}</h3><div class="meta">${p.m}</div>
-    <div class="desc">${p.d}</div>${flag}
+    ${im}<div class="desc">${p.d}</div>${flag}
     <div class="foot"><a class="ts" href="${V}${p.s}" target="_blank" rel="noopener">▶ ${p.ts}</a><a class="lnk" href="${p.u}" target="_blank" rel="noopener">paper ↗</a></div>
   </article>`;
 }
