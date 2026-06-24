@@ -43,6 +43,8 @@ Every **▶ timestamp** below deep-links into the video at that exact second.
 His own spontaneous enumeration of the deep-learning canon (*"我可能数不全"* — "I can't list them all"). He pointedly keeps **his own** work out of this tier: asked *"DiT 不算吗?"* he answers *"算 0.25"* — only a quarter.
 
 ### 1. LeNet · *LeCun et al., 1998*
+
+<img src="assets/figures/lenet.png" alt="lenet — Figure" width="540">
 The first convolutional neural network trained end-to-end with backpropagation, built to read handwritten digits (famously deployed on bank checks). It introduced the conv → pool → conv stack that every modern vision model still echoes — arriving a decade before the data and GPUs that would finally make it shine.
 📄 [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
@@ -53,6 +55,8 @@ The model that started the deep-learning revolution. Winning ImageNet 2012 by a 
 📄 [paper](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 3. ImageNet · *Deng … Fei-Fei, 2009*
+
+<img src="assets/figures/imagenet.png" alt="imagenet — Figure" width="540">
 Not a model but the dataset that made everything else possible: ~14M human-labeled images across 1000+ categories. Fei-Fei Li's bet that **data**, not just algorithms, was the real bottleneck — and the benchmark that drove a decade of progress.
 📄 [paper](https://ieeexplore.ieee.org/document/5206848) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
@@ -251,7 +255,7 @@ This matters because online recaps were wrong: they listed **ConvNeXt** and **V-
 
 ## License
 
-Content licensed **CC BY 4.0**. Interview by **Zhang Xiaojun (张小珺)** with **Saining Xie (谢赛宁)**.
+Content licensed **CC BY 4.0**. Paper figures are © their respective authors, shown for educational reference; **LeNet** and **ImageNet** figures are from Wikimedia Commons. Interview by **Zhang Xiaojun (张小珺)** with **Saining Xie (谢赛宁)**.
 Unofficial, fan-made study aid; all rights to the interview belong to its creators.
 
 > Spotted a paper that's missing, or can confirm the garbled name at ~2:22:04? **Open an issue or PR.**

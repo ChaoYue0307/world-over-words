@@ -199,6 +199,7 @@
 <footer>
   <div class="wrap">
     <p>Interview by <a href="https://x.com/zhang_benita" target="_blank" rel="noopener">Zhang Xiaojun (张小珺)</a> with <a href="https://www.sainingxie.com/" target="_blank" rel="noopener">Saining Xie (谢赛宁)</a> · Content licensed CC BY 4.0 · Unofficial fan-made study aid.</p>
+    <p style="font-size:12.5px">Paper figures © their respective authors, shown for educational reference; each links to its source. LeNet &amp; ImageNet figures via Wikimedia Commons.</p>
     <p><a href="https://github.com/ChaoYue0307/world-over-words" target="_blank" rel="noopener">GitHub repository</a> · <a href="https://www.bilibili.com/video/BV1tew5zVEDf/" target="_blank" rel="noopener">Bilibili</a> · <a href="https://podcasts.apple.com/cn/podcast/id1634356920?i=1000755501308" target="_blank" rel="noopener">Apple Podcasts</a></p>
   </div>
 </footer>
@@ -245,7 +246,7 @@ const tier3=[
  {t:"Mask R-CNN / Focal Loss",m:"Girshick's detection line",u:"https://arxiv.org/abs/1703.06870",ts:"2:34:49",s:9289}
 ];
 
-const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa","Transformer — Attention Is All You Need":"transformer","GPT-3":"gpt3","AlexNet":"alexnet","Cambrian-1":"cambrian","RAE — Representation Autoencoder":"rae"};
+const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa","Transformer — Attention Is All You Need":"transformer","GPT-3":"gpt3","AlexNet":"alexnet","Cambrian-1":"cambrian","RAE — Representation Autoencoder":"rae","LeNet":"lenet","ImageNet":"imagenet"};
 [...tier1,...tier2].forEach(p=>{const k=FIG[p.t];if(k)p.img="assets/figures/"+k+".png";});
 function card(p,tier){
   const flag=p.flag?`<span class="flag">${p.flag}</span>`:"";
