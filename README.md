@@ -2,8 +2,8 @@
 
 > *"Training world models over word models."* — Saining Xie (谢赛宁), founding manifesto of AMI Labs
 
-![works](https://img.shields.io/badge/works_mapped-33-blue)
-![great](https://img.shields.io/badge/Saining_calls_great-16-gold)
+![works](https://img.shields.io/badge/works_mapped-35-blue)
+![great](https://img.shields.io/badge/Saining_calls_great-17-gold)
 ![interview](https://img.shields.io/badge/source-6h45m_interview-red)
 ![method](https://img.shields.io/badge/built_from-verbatim_transcript-brightgreen)
 ![license](https://img.shields.io/badge/license-CC_BY_4.0-lightgrey)
@@ -66,73 +66,79 @@ Not a model but the dataset that made everything else possible: ~14M human-label
 Residual ("skip") connections fixed the vanishing-gradient problem and let networks scale to 100–1000+ layers. One of the most-cited papers in all of science, the default vision backbone for years, and the conceptual ancestor of the residual stream inside Transformers.
 📄 [paper](https://arxiv.org/abs/1512.03385) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
-### 5. R-CNN / Fast R-CNN · *Girshick et al., 2014–15*
+### 5. R-CNN · *Girshick et al., 2014*
 
 <img src="assets/figures/rcnn.png" alt="rcnn — Figure 1" width="540">
-Brought CNN features to object detection — *where* + *what*, not just *what*. The "regions + CNN" recipe and its faster successors launched the modern detection pipeline behind autonomous driving, medical imaging and more.
+Brought CNN features to object detection — region proposals scored by a CNN. The recipe that launched the modern detection pipeline behind self-driving and medical imaging.
 📄 [paper](https://arxiv.org/abs/1311.2524) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
-### 6. Transformer — *Attention Is All You Need* · *Vaswani et al., 2017*
+### 6. Fast R-CNN · *Girshick, 2015*
+
+<img src="assets/figures/fastrcnn.png" alt="fastrcnn — Figure 1" width="540">
+Made R-CNN end-to-end and far faster — a single pass over the image with RoI pooling, jointly predicting class and box. The basis for Faster R-CNN and Mask R-CNN.
+📄 [paper](https://arxiv.org/abs/1504.08083) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
+
+### 7. Transformer — *Attention Is All You Need* · *Vaswani et al., 2017*
 
 <img src="assets/figures/transformer.png" alt="transformer — Figure" width="540">
 Threw out recurrence and convolution, keeping only attention. It made training massively parallel and is the single architecture beneath GPT, BERT, CLIP, ViT and diffusion models — most of today's frontier AI.
 📄 [paper](https://arxiv.org/abs/1706.03762) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
-### 7. Attention · *Bahdanau, Cho & Bengio, 2014* ⚠️ *garbled in transcript — see [decoding](#-decoding-the-garbled-names)*
+### 8. Attention · *Bahdanau, Cho & Bengio, 2014* ⚠️ *garbled in transcript — see [decoding](#-decoding-the-garbled-names)*
 
 <img src="assets/figures/attention.png" alt="attention — Figure 1" width="540">
 Introduced the attention mechanism for neural machine translation: instead of cramming a sentence into one vector, let the model "look back" at the relevant words. The seed idea that Transformers later scaled into everything.
 📄 [paper](https://arxiv.org/abs/1409.0473) · ▶ [~2:22:04](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8524)
 
-### 8. GPT-3 · *Brown et al., 2020*
+### 9. GPT-3 · *Brown et al., 2020*
 
 <img src="assets/figures/gpt3.png" alt="gpt3 — Figure" width="540">
 At 175B parameters, it showed that scale alone unlocks emergent few-shot ability: describe a task in the prompt and the model just does it. The empirical proof of the scaling-law thesis and the direct ancestor of ChatGPT.
 📄 [paper](https://arxiv.org/abs/2005.14165) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
-### 9. BERT · *Devlin et al., 2018*
+### 10. BERT · *Devlin et al., 2018*
 
 <img src="assets/figures/bert.png" alt="bert — Figure 1" width="540">
 Bidirectional masked-language pretraining — hide words, predict them from both sides. It advanced the state of the art across NLP, made "pretrain then fine-tune" standard, and directly inspired Saining's own MAE for images.
 📄 [paper](https://arxiv.org/abs/1810.04805) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
-### 10. CLIP · *Radford et al., 2021*
+### 11. CLIP · *Radford et al., 2021*
 
 <img src="assets/figures/clip.png" alt="clip — Figure 1" width="540">
 Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era. (Saining also notes its blind spots at 3:18.)
 📄 [paper](https://arxiv.org/abs/2103.00020) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
-### 11. ViT — Vision Transformer · *Dosovitskiy et al., 2020*
+### 12. ViT — Vision Transformer · *Dosovitskiy et al., 2020*
 
 <img src="assets/figures/vit.png" alt="vit — Figure 1" width="540">
 Showed that a plain Transformer, fed image patches as tokens, beats CNNs once data and compute are large enough — unifying vision and language under one architecture.
 📄 [paper](https://arxiv.org/abs/2010.11929) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
-### 12. GAN · *Goodfellow et al., 2014*
+### 13. GAN · *Goodfellow et al., 2014*
 
 <img src="assets/figures/gan.png" alt="gan — Figure 1" width="540">
 A generator and a discriminator locked in a minimax game. The framework that first made photorealistic synthesis possible and dominated generative modeling before diffusion.
 📄 [paper](https://arxiv.org/abs/1406.2661) · ▶ [2:22:14](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8534)
 
-### 13. NeRF · *Mildenhall et al., 2020*
+### 14. NeRF · *Mildenhall et al., 2020*
 
 <img src="assets/figures/nerf.png" alt="nerf — Figure 1" width="540">
 Represents a 3D scene as a tiny neural network of color and density, rendering photorealistic novel viewpoints from a handful of photos. Reignited neural 3D and inverse graphics.
 📄 [paper](https://arxiv.org/abs/2003.08934) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
-### 14. 3D Gaussian Splatting · *Kerbl et al., 2023*
+### 15. 3D Gaussian Splatting · *Kerbl et al., 2023*
 
 <img src="assets/figures/gsplat.png" alt="gsplat — Figure 1" width="540">
 Replaces NeRF's slow volumetric sampling with millions of optimized 3D Gaussians, hitting real-time, high-fidelity rendering — quickly the new default for neural 3D.
 📄 [paper](https://arxiv.org/abs/2308.04079) · ▶ [2:22:25](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8545)
 
-### 15. Diffusion / DDPM · *Ho, Jain, Abbeel, 2020*
+### 16. Diffusion / DDPM · *Ho, Jain, Abbeel, 2020*
 
 <img src="assets/figures/ddpm.png" alt="ddpm — Figure 1" width="540">
 Generate by learning to **reverse** a gradual noising process. DDPM made diffusion practical and surpassed GANs in quality and stability — the engine behind today's image and video generators.
 📄 [paper](https://arxiv.org/abs/2006.11239) · ▶ [2:21:09](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8469)
 
-### 16. Stable Diffusion / LDM · *Rombach et al., 2022*
+### 17. Stable Diffusion / LDM · *Rombach et al., 2022*
 
 <img src="assets/figures/ldm.png" alt="ldm — Figure 1" width="540">
 Ran diffusion in a compressed **latent** space, cutting cost enough to make high-resolution generation fast — and, by open-sourcing it, kicked off the consumer generative-AI wave.
@@ -229,8 +235,10 @@ Use a powerful pretrained representation as the generative model's encoder/found
   <br><img src="assets/figures/unet.png" alt="unet" width="460">
 - **CPC** — Contrastive Predictive Coding. [arXiv](https://arxiv.org/abs/1807.03748) · ▶ [2:00:27](https://www.bilibili.com/video/BV1tew5zVEDf/?t=7227)
   <br><img src="assets/figures/cpc.png" alt="cpc" width="460">
-- **Mask R-CNN / Focal Loss** (Girshick's line; mentioned, not in Tier 1). [Mask](https://arxiv.org/abs/1703.06870) · [Focal](https://arxiv.org/abs/1708.02002) · ▶ [2:34:49](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9289)
+- **Mask R-CNN** (He et al., 2017) — pixel-level instance segmentation. [arXiv](https://arxiv.org/abs/1703.06870) · ▶ [2:34:49](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9289)
   <br><img src="assets/figures/maskrcnn.png" alt="maskrcnn" width="460">
+- **Focal Loss** (Lin et al., 2017) — down-weights easy examples for dense detection (RetinaNet). [arXiv](https://arxiv.org/abs/1708.02002) · ▶ [2:34:56](https://www.bilibili.com/video/BV1tew5zVEDf/?t=9296)
+  <br><img src="assets/figures/focalloss.png" alt="focalloss" width="460">
 
 **Contemporary systems / tools name-dropped**
 Sora ([openai.com/sora](https://openai.com/sora), cites his DiT) · SeeDance · Nano Banana · Gemini / ChatGPT · a video model likely **Veo** · **PyTorch** ([pytorch.org](https://pytorch.org))
