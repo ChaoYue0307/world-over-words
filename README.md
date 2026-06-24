@@ -47,6 +47,8 @@ The first convolutional neural network trained end-to-end with backpropagation, 
 📄 [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 2. AlexNet · *Krizhevsky, Sutskever, Hinton, 2012*
+
+<img src="assets/figures/alexnet.png" alt="alexnet — Figure" width="540">
 The model that started the deep-learning revolution. Winning ImageNet 2012 by a shocking margin — using GPUs, ReLUs and dropout — it convinced the field that learned deep features, not hand-crafted ones, were the future.
 📄 [paper](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
@@ -67,6 +69,8 @@ Brought CNN features to object detection — *where* + *what*, not just *what*. 
 📄 [paper](https://arxiv.org/abs/1311.2524) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 6. Transformer — *Attention Is All You Need* · *Vaswani et al., 2017*
+
+<img src="assets/figures/transformer.png" alt="transformer — Figure" width="540">
 Threw out recurrence and convolution, keeping only attention. It made training massively parallel and is the single architecture beneath GPT, BERT, CLIP, ViT and diffusion models — essentially all frontier AI today.
 📄 [paper](https://arxiv.org/abs/1706.03762) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
@@ -77,6 +81,8 @@ Introduced the attention mechanism for neural machine translation: instead of cr
 📄 [paper](https://arxiv.org/abs/1409.0473) · ▶ [~2:22:04](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8524)
 
 ### 8. GPT-3 · *Brown et al., 2020*
+
+<img src="assets/figures/gpt3.png" alt="gpt3 — Figure" width="540">
 At 175B parameters, it showed that scale alone unlocks emergent few-shot ability: describe a task in the prompt and the model just does it. The empirical proof of the scaling-law thesis and the direct ancestor of ChatGPT.
 📄 [paper](https://arxiv.org/abs/2005.14165) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
@@ -185,6 +191,8 @@ Mask 75% of an image and reconstruct it — a simple, scalable self-supervised r
 📄 [arXiv](https://arxiv.org/abs/2111.06377) · ▶ [2:26:45](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8805)
 
 ### Cambrian-1 · *2024*
+
+<img src="assets/figures/cambrian.png" alt="cambrian — Figure" width="540">
 A vision-centric multimodal LLM and a study of how visual representations should connect to language models — his argument that vision deserves first-class treatment, not a bolt-on.
 📄 [arXiv](https://arxiv.org/abs/2406.16860) · ▶ [3:15:51](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11751)
 
@@ -195,8 +203,10 @@ Align a diffusion Transformer's internal features to a strong self-supervised en
 📄 [arXiv](https://arxiv.org/abs/2410.06940) · ▶ [4:01:06](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14466)
 
 ### RAE — Representation Autoencoder · *2025*
-Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the "representation-first" thesis one step further. (arXiv ID unverified; link goes to his author page.)
-📄 [arXiv (author)](https://arxiv.org/a/xie_s_1.html) · ▶ [4:02:48](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14568)
+
+<img src="assets/figures/rae.png" alt="rae — Figure" width="540">
+Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the "representation-first" thesis one step further.
+📄 [arXiv](https://arxiv.org/abs/2510.11690) · ▶ [4:02:48](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14568)
 
 ---
 

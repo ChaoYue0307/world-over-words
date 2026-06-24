@@ -233,7 +233,7 @@ const tier2=[
  {t:"MAE — Masked Autoencoders",m:"2022",d:"Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe bringing BERT's idea to vision. (Kaiming-led.)",u:"https://arxiv.org/abs/2111.06377",ts:"2:26:45",s:8805},
  {t:"Cambrian-1",m:"2024",d:"A vision-centric multimodal LLM and study of how visual representations should connect to language models — his case that vision deserves first-class treatment.",u:"https://arxiv.org/abs/2406.16860",ts:"3:15:51",s:11751},
  {t:"REPA — Representation Alignment",m:"2025",d:"Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding training. ‘Another keyword: representation,’ he laughs.",u:"https://arxiv.org/abs/2410.06940",ts:"4:01:06",s:14466},
- {t:"RAE — Representation Autoencoder",m:"2025",d:"Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the ‘representation-first’ thesis one step further. (arXiv ID unverified.)",u:"https://arxiv.org/a/xie_s_1.html",ts:"4:02:48",s:14568}
+ {t:"RAE — Representation Autoencoder",m:"2025",d:"Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the ‘representation-first’ thesis one step further.",u:"https://arxiv.org/abs/2510.11690",ts:"4:02:48",s:14568}
 ];
 const tier3=[
  {t:"Dyna",m:"Sutton, 1991 — model-based RL",u:"https://dl.acm.org/doi/10.1145/122344.122377",ts:"4:15:20",s:15320},
@@ -245,7 +245,7 @@ const tier3=[
  {t:"Mask R-CNN / Focal Loss",m:"Girshick's detection line",u:"https://arxiv.org/abs/1703.06870",ts:"2:34:49",s:9289}
 ];
 
-const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa"};
+const FIG={"ResNet":"resnet","R-CNN / Fast R-CNN":"rcnn","Attention":"attention","BERT":"bert","CLIP":"clip","ViT — Vision Transformer":"vit","GAN":"gan","NeRF":"nerf","3D Gaussian Splatting":"gsplat","Diffusion / DDPM":"ddpm","Stable Diffusion / LDM":"ldm","Deeply-Supervised Nets (DSN)":"dsn","HED — Holistically-Nested Edge Detection":"hed","ResNeXt":"resnext","DiT — Diffusion Transformers":"dit","SiT — Scalable Interpolant Transformers":"sit","MoCo — Momentum Contrast":"moco","MAE — Masked Autoencoders":"mae","REPA — Representation Alignment":"repa","Transformer — Attention Is All You Need":"transformer","GPT-3":"gpt3","AlexNet":"alexnet","Cambrian-1":"cambrian","RAE — Representation Autoencoder":"rae"};
 [...tier1,...tier2].forEach(p=>{const k=FIG[p.t];if(k)p.img="assets/figures/"+k+".png";});
 function card(p,tier){
   const flag=p.flag?`<span class="flag">${p.flag}</span>`:"";
