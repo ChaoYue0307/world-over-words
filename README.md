@@ -10,7 +10,7 @@
 
 A curated, **timestamped** map of every research paper, model, and system mentioned by **Saining Xie (谢赛宁)** — co-founder & Chief Scientist of **AMI Labs** (with Yann LeCun) — during his **first-ever interview**: a 6-hour-45-minute marathon with podcaster **Zhang Xiaojun (张小珺)**, recorded in Brooklyn after the 2026 Spring Festival.
 
-Its centerpiece is a moment around **2:21:40** where Xie tries to name the *"~20–25 papers that deeply shaped deep learning and AI"* — the works he considers genuine 代表作 (masterpieces) — while insisting *"那我一篇都没有"* ("I don't have a single one of those"). This repo reconstructs that canon, separates it from his own work, and **decodes the names the auto-transcription garbled**.
+Its centerpiece is a moment around **2:21:40** where Saining tries to name the *"~20–25 papers that deeply shaped deep learning and AI"* — the works Saining considers genuine 代表作 (masterpieces) — while insisting *"那我一篇都没有"* ("I don't have a single one of those"). This repo reconstructs that canon, separates it from his own work, and **decodes the names the auto-transcription garbled**.
 
 > 🌐 **Website:** https://chaoyue0307.github.io/world-over-words/
 
@@ -38,9 +38,9 @@ Every **▶ timestamp** below deep-links into the video at that exact second.
 
 ---
 
-## ⭐ Tier 1 — Papers he explicitly calls GREAT (代表作)
+## ⭐ Tier 1 — Papers Saining calls GREAT (代表作)
 
-His own spontaneous enumeration of the deep-learning canon (*"我可能数不全"* — "I can't list them all"). He pointedly keeps **his own** work out of this tier: asked *"DiT 不算吗?"* he answers *"算 0.25"* — only a quarter.
+Saining's own spontaneous enumeration of the deep-learning canon (*"我可能数不全"* — "I can't list them all"). Saining keeps his own work out of this tier: asked *"DiT 不算吗?"* he answers *"算 0.25"* — only a quarter.
 
 ### 1. LeNet · *LeCun et al., 1998*
 
@@ -51,7 +51,7 @@ The first convolutional neural network trained end-to-end with backpropagation, 
 ### 2. AlexNet · *Krizhevsky, Sutskever, Hinton, 2012*
 
 <img src="assets/figures/alexnet.png" alt="alexnet — Figure" width="540">
-The model that started the deep-learning revolution. Winning ImageNet 2012 by a shocking margin — using GPUs, ReLUs and dropout — it convinced the field that learned deep features, not hand-crafted ones, were the future.
+Widely credited with sparking the modern deep-learning boom. Winning ImageNet 2012 by a wide margin — using GPUs, ReLUs and dropout — it convinced the field that learned deep features, not hand-crafted ones, were the future.
 📄 [paper](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) · ▶ [2:21:40](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8500)
 
 ### 3. ImageNet · *Deng … Fei-Fei, 2009*
@@ -75,7 +75,7 @@ Brought CNN features to object detection — *where* + *what*, not just *what*. 
 ### 6. Transformer — *Attention Is All You Need* · *Vaswani et al., 2017*
 
 <img src="assets/figures/transformer.png" alt="transformer — Figure" width="540">
-Threw out recurrence and convolution, keeping only attention. It made training massively parallel and is the single architecture beneath GPT, BERT, CLIP, ViT and diffusion models — essentially all frontier AI today.
+Threw out recurrence and convolution, keeping only attention. It made training massively parallel and is the single architecture beneath GPT, BERT, CLIP, ViT and diffusion models — most of today's frontier AI.
 📄 [paper](https://arxiv.org/abs/1706.03762) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 7. Attention · *Bahdanau, Cho & Bengio, 2014* ⚠️ *garbled in transcript — see [decoding](#-decoding-the-garbled-names)*
@@ -93,13 +93,13 @@ At 175B parameters, it showed that scale alone unlocks emergent few-shot ability
 ### 9. BERT · *Devlin et al., 2018*
 
 <img src="assets/figures/bert.png" alt="bert — Figure 1" width="540">
-Bidirectional masked-language pretraining — hide words, predict them from both sides. It shattered NLP benchmarks, made "pretrain then fine-tune" standard, and directly inspired Xie's own MAE for images.
+Bidirectional masked-language pretraining — hide words, predict them from both sides. It advanced the state of the art across NLP, made "pretrain then fine-tune" standard, and directly inspired Saining's own MAE for images.
 📄 [paper](https://arxiv.org/abs/1810.04805) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 10. CLIP · *Radford et al., 2021*
 
 <img src="assets/figures/clip.png" alt="clip — Figure 1" width="540">
-Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era. (Xie also notes its blind spots at 3:18.)
+Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era. (Saining also notes its blind spots at 3:18.)
 📄 [paper](https://arxiv.org/abs/2103.00020) · ▶ [2:22:02](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8522)
 
 ### 11. ViT — Vision Transformer · *Dosovitskiy et al., 2020*
@@ -144,13 +144,13 @@ Ran diffusion in a compressed **latent** space, cutting cost enough to make high
 
 The interview is Chinese with English terms mixed in, and the auto-transcription mangled two paper names. Both are decoded here with evidence:
 
-- **"Tension Solution Unit" (~2:22:04) → an attention paper.** *High confidence on "attention," medium on the exact paper.* This transcript reliably renders **self-attention as "software attention" / "Software Tension"** (2:58:30, 2:58:45) — so **"Tension" = attention**. Since Xie lists *Transformer* separately at #6, the best fit is the original attention paper, **Bahdanau et al. 2014**. ⚠️ Confirm by ear at **~2:22:04–2:22:06** — issues/PRs welcome.
+- **"Tension Solution Unit" (~2:22:04) → an attention paper.** *High confidence on "attention," medium on the exact paper.* This transcript reliably renders **self-attention as "software attention" / "Software Tension"** (2:58:30, 2:58:45) — so **"Tension" = attention**. Since Saining lists *Transformer* separately at #6, the best fit is the original attention paper, **Bahdanau et al. 2014**. ⚠️ Confirm by ear at **~2:22:04–2:22:06** — issues/PRs welcome.
 
 ---
 
-## 🧪 Tier 2 — His own / co-authored work he discusses
+## 🧪 Tier 2 — Saining's own / co-authored work
 
-Discussed in depth, but **he keeps these out of the "great" tier** (he rates DiT "0.25").
+Discussed in depth, but **Saining keeps these out of the "great" tier** (he rates DiT "0.25").
 
 ### Deeply-Supervised Nets (DSN) · *2015*
 
@@ -173,7 +173,7 @@ Added "cardinality" — parallel grouped transformations — as a new scaling ax
 ### DiT — Diffusion Transformers · *2023* · *self-rated "0.25"*
 
 <img src="assets/figures/dit.png" alt="dit — Figure 1" width="540">
-Replaced the U-Net in diffusion with a Transformer, so image generators inherit the clean scaling behavior of LLMs. The backbone behind Sora and modern video models — though he modestly downgrades it.
+Replaced the U-Net in diffusion with a Transformer, so image generators inherit the clean scaling behavior of LLMs. The backbone behind Sora and modern video models.
 📄 [arXiv](https://arxiv.org/abs/2212.09748) · ▶ [2:20:41](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8441)
 
 ### SiT — Scalable Interpolant Transformers · *2024*
@@ -185,25 +185,25 @@ Recasts DiT through stochastic interpolants / flow matching — a more flexible,
 ### MoCo — Momentum Contrast · *2020*
 
 <img src="assets/figures/moco.png" alt="moco — Figure 1" width="540">
-Built a large, consistent dictionary for contrastive self-supervised learning — the first time self-supervised features rivaled supervised ImageNet pretraining on vision tasks. (Kaiming-led; Xie co-author.)
+Built a large, consistent dictionary for contrastive self-supervised learning — the first time self-supervised features rivaled supervised ImageNet pretraining on vision tasks. (Kaiming He–led; Saining is a co-author.)
 📄 [arXiv](https://arxiv.org/abs/1911.05722) · ▶ [2:25:59](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8759)
 
 ### MAE — Masked Autoencoders · *2022*
 
 <img src="assets/figures/mae.png" alt="mae — Figure 1" width="540">
-Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe that brought BERT's idea to vision. (Kaiming-led; Xie co-author.)
+Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe that brought BERT's idea to vision. (Kaiming He–led; Saining is a co-author.)
 📄 [arXiv](https://arxiv.org/abs/2111.06377) · ▶ [2:26:45](https://www.bilibili.com/video/BV1tew5zVEDf/?t=8805)
 
 ### Cambrian-1 · *2024*
 
 <img src="assets/figures/cambrian.png" alt="cambrian — Figure" width="540">
-A vision-centric multimodal LLM and a study of how visual representations should connect to language models — his argument that vision deserves first-class treatment, not a bolt-on.
+A vision-centric multimodal LLM and a study of how visual representations should connect to language models — Saining's argument that vision deserves first-class treatment, not a bolt-on.
 📄 [arXiv](https://arxiv.org/abs/2406.16860) · ▶ [3:15:51](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11751)
 
 ### REPA — Representation Alignment · *2025*
 
 <img src="assets/figures/repa.png" alt="repa — Figure 1" width="540">
-Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding up training. "Another keyword: representation," he laughs.
+Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding up training. "Another keyword: representation," as Saining puts it.
 📄 [arXiv](https://arxiv.org/abs/2410.06940) · ▶ [4:01:06](https://www.bilibili.com/video/BV1tew5zVEDf/?t=14466)
 
 ### RAE — Representation Autoencoder · *2025*
@@ -218,8 +218,11 @@ Use a powerful pretrained representation as the generative model's encoder/found
 
 **RL & world-model lineage**
 - **Dyna** (Sutton, 1991) — model-based RL; the reactive vs. model-based "System 1 / System 2" framing. [ACM](https://dl.acm.org/doi/10.1145/122344.122377) · ▶ [4:15:20](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15320)
-- **The Bitter Lesson** (Sutton, 2019 essay) — Xie's provocation: *"LLMs are anti–Bitter Lesson."* [essay](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) · ▶ [4:10:33](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15033)
+  <br><img src="assets/figures/dyna.png" alt="dyna" width="460">
+- **The Bitter Lesson** (Sutton, 2019 essay) — Saining's provocation: *"LLMs are anti–Bitter Lesson."* [essay](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) · ▶ [4:10:33](https://www.bilibili.com/video/BV1tew5zVEDf/?t=15033)
+  <br><img src="assets/figures/bitter.png" alt="bitter" width="460">
 - **JEPA** (LeCun) — *A Path Towards Autonomous Machine Intelligence*; "from doubting JEPA, to understanding it, to becoming it." [paper](https://openreview.net/forum?id=BZ5a1r-kVsf) · ▶ [6:03:10](https://www.bilibili.com/video/BV1tew5zVEDf/?t=21790)
+  <br><img src="assets/figures/jepa.png" alt="jepa" width="460">
 - **Genie** (DeepMind) — an interactive, generative world model. [arXiv](https://arxiv.org/abs/2402.15391) · ▶ [4:26:52](https://www.bilibili.com/video/BV1tew5zVEDf/?t=16012)
   <br><img src="assets/figures/genie.png" alt="genie" width="460">
 - **U-Net** — the architecture DiT replaced. [arXiv](https://arxiv.org/abs/1505.04597) · ▶ [3:04:00](https://www.bilibili.com/video/BV1tew5zVEDf/?t=11040)
@@ -244,14 +247,14 @@ Neural Architecture Search (NAS, reflected on critically, 1:13:52) · Scaling La
 1. Pulled the **full verbatim transcript** — **4,926 timestamped segments** — of the episode.
 2. Scanned every segment for model / paper / architecture names, then read each hit in context.
 3. Profiled the transcription's failure modes (e.g. *self-attention → "software attention"*, *inductive bias → "index bias"*) to **decode garbled names**.
-4. Separated three tiers: **(1)** papers Xie himself calls great, **(2)** his own work, **(3)** everything else referenced.
+4. Separated three tiers: **(1)** papers Saining himself calls great, **(2)** his own work, **(3)** everything else referenced.
 
-This matters because online recaps were wrong: they listed **ConvNeXt** and **V-JEPA** as mentioned, but those names **never appear** in the actual audio (0 hits) — they were imported from his CV. The verbatim transcript fixes that.
+This matters because online recaps were wrong: they listed **ConvNeXt** and **V-JEPA** as mentioned, but those names **never appear** in the actual audio (0 hits) — they were imported from Saining's CV. The verbatim transcript fixes that.
 
 ## ✨ Features
 
 - ✅ **Every paper** with an official / arXiv link and a **▶ timestamp that deep-links into the video** at that second.
-- ✅ **Three tiers** — separates "papers he calls *great*" from "his own work" from "merely referenced."
+- ✅ **Three tiers** — separates "papers Saining calls *great*" from "Saining's own work" from "merely referenced."
 - ✅ **Garbled-name forensics** — decoded with evidence and the exact second to verify by ear.
 - ✅ Built from the **complete transcript**, not secondhand summaries.
 
@@ -259,7 +262,7 @@ This matters because online recaps were wrong: they listed **ConvNeXt** and **V-
 
 ## License
 
-Content licensed **CC BY 4.0**. Paper figures are © their respective authors, shown for educational reference; **LeNet** and **ImageNet** figures are from Wikimedia Commons. Interview by **Zhang Xiaojun (张小珺)** with **Saining Xie (谢赛宁)**.
+Content licensed **CC BY 4.0**. Paper figures are © their respective authors, shown for educational reference; **LeNet**, **ImageNet**, and the **Richard Sutton** portraits (Dyna, Bitter Lesson) are from Wikimedia Commons. Interview by **Zhang Xiaojun (张小珺)** with **Saining Xie (谢赛宁)**.
 Unofficial, fan-made study aid; all rights to the interview belong to its creators.
 
 > Spotted a paper that's missing, or can confirm the garbled name at ~2:22:04? **Open an issue or PR.**

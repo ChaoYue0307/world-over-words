@@ -154,8 +154,8 @@
 <main class="wrap">
 
   <section id="tier1">
-    <div class="sec-head"><h2>Tier 1 — Papers he calls great</h2><span class="pill gold">代表作 · 16</span></div>
-    <p class="sec-desc">His spontaneous enumeration of the deep-learning canon — the <em>"~20–25 papers that deeply shaped deep learning and AI."</em> He keeps his own work out: asked <em>"DiT 不算吗?"</em> he answers <em>"算 0.25"</em> — only a quarter.</p>
+    <div class="sec-head"><h2>Tier 1 — Papers Saining calls great</h2><span class="pill gold">代表作 · 16</span></div>
+    <p class="sec-desc">Saining's spontaneous enumeration of the deep-learning canon — the <em>"~20–25 papers that deeply shaped deep learning and AI."</em> Saining keeps his own work out: asked <em>"DiT 不算吗?"</em> he answers <em>"算 0.25"</em> — only a quarter.</p>
     <div class="grid" id="grid1"></div>
   </section>
 
@@ -168,8 +168,8 @@
   </section>
 
   <section id="tier2">
-    <div class="sec-head"><h2>Tier 2 — His own work he discusses</h2><span class="pill teal">10</span></div>
-    <p class="sec-desc">Covered in depth across the interview — but he keeps these <em>out</em> of the "great" tier (he rates DiT "0.25"). MoCo &amp; MAE are Kaiming He–led, with Xie as co-author.</p>
+    <div class="sec-head"><h2>Tier 2 — Saining's own work</h2><span class="pill teal">10</span></div>
+    <p class="sec-desc">Covered in depth across the interview — but he keeps these <em>out</em> of the "great" tier (he rates DiT "0.25"). MoCo &amp; MAE are Kaiming He–led, with Saining as a co-author.</p>
     <div class="grid" id="grid2"></div>
   </section>
 
@@ -185,10 +185,10 @@
 
   <section id="how">
     <div class="sec-head"><h2>✨ How this was built</h2></div>
-    <p class="sec-desc">Compiled from the <em>full verbatim transcript — 4,926 timestamped segments</em> — not secondhand summaries. That precision matters: popular recaps listed <strong>ConvNeXt</strong> and <strong>V-JEPA</strong> as mentioned, but those names <strong>never appear</strong> in the actual audio (0 hits). They were imported from his CV.</p>
+    <p class="sec-desc">Compiled from the <em>full verbatim transcript — 4,926 timestamped segments</em> — not secondhand summaries. That precision matters: popular recaps listed <strong>ConvNeXt</strong> and <strong>V-JEPA</strong> as mentioned, but those names <strong>never appear</strong> in the actual audio (0 hits). They were imported from Saining's CV.</p>
     <div class="feat">
       <div class="f"><h4>Deep-linked timestamps</h4><p>Every ▶ pill jumps straight into the Bilibili video at that exact second.</p></div>
-      <div class="f"><h4>Three clear tiers</h4><p>Separates "papers he calls great" from "his own work" from "merely referenced."</p></div>
+      <div class="f"><h4>Three clear tiers</h4><p>Separates "papers Saining calls great" from "Saining's own work" from "merely referenced."</p></div>
       <div class="f"><h4>Garbled-name forensics</h4><p>ASR mistakes decoded with evidence and the precise second to verify by ear.</p></div>
       <div class="f"><h4>Full-transcript coverage</h4><p>All 4,926 segments scanned and read in context, not skimmed.</p></div>
     </div>
@@ -199,7 +199,7 @@
 <footer>
   <div class="wrap">
     <p>Interview by <a href="https://x.com/zhang_benita" target="_blank" rel="noopener">Zhang Xiaojun (张小珺)</a> with <a href="https://www.sainingxie.com/" target="_blank" rel="noopener">Saining Xie (谢赛宁)</a> · Content licensed CC BY 4.0 · Unofficial fan-made study aid.</p>
-    <p style="font-size:12.5px">Paper figures © their respective authors, shown for educational reference; each links to its source. LeNet &amp; ImageNet figures via Wikimedia Commons.</p>
+    <p style="font-size:12.5px">Paper figures © their respective authors, shown for educational reference; each links to its source. LeNet, ImageNet &amp; Richard Sutton portraits (Dyna, Bitter Lesson) via Wikimedia Commons.</p>
     <p><a href="https://github.com/ChaoYue0307/world-over-words" target="_blank" rel="noopener">GitHub repository</a> · <a href="https://www.bilibili.com/video/BV1tew5zVEDf/" target="_blank" rel="noopener">Bilibili</a> · <a href="https://podcasts.apple.com/cn/podcast/id1634356920?i=1000755501308" target="_blank" rel="noopener">Apple Podcasts</a></p>
   </div>
 </footer>
@@ -208,14 +208,14 @@
 const V="https://www.bilibili.com/video/BV1tew5zVEDf/?t=";
 const tier1=[
  {n:1,t:"LeNet",m:"LeCun et al., 1998",d:"The first CNN trained end-to-end with backpropagation, built to read handwritten digits on bank checks. It introduced the conv→pool→conv stack every modern vision model still echoes — a decade ahead of the hardware that would vindicate it.",u:"http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf",ts:"2:21:40",s:8500},
- {n:2,t:"AlexNet",m:"Krizhevsky, Sutskever, Hinton, 2012",d:"The model that started the deep-learning revolution. Winning ImageNet 2012 by a shocking margin with GPUs, ReLUs and dropout, it proved learned deep features beat hand-crafted ones.",u:"https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",ts:"2:21:40",s:8500},
+ {n:2,t:"AlexNet",m:"Krizhevsky, Sutskever, Hinton, 2012",d:"Widely credited with sparking the modern deep-learning boom. Winning ImageNet 2012 by a wide margin with GPUs, ReLUs and dropout, it proved learned deep features beat hand-crafted ones.",u:"https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",ts:"2:21:40",s:8500},
  {n:3,t:"ImageNet",m:"Deng … Fei-Fei, 2009",d:"Not a model but the dataset that made everything possible: ~14M labeled images over 1000+ categories. Fei-Fei Li's bet that data, not just algorithms, was the bottleneck — and the benchmark that drove a decade of progress.",u:"https://ieeexplore.ieee.org/document/5206848",ts:"2:21:40",s:8500},
  {n:4,t:"ResNet",m:"He et al., 2016",d:"Residual ‘skip’ connections fixed vanishing gradients and let networks reach 100–1000+ layers. One of the most-cited papers in science and the conceptual ancestor of the residual stream inside Transformers.",u:"https://arxiv.org/abs/1512.03385",ts:"2:21:40",s:8500},
  {n:5,t:"R-CNN / Fast R-CNN",m:"Girshick et al., 2014–15",d:"Brought CNN features to object detection — where + what, not just what. The ‘regions + CNN’ recipe launched the modern detection pipeline behind self-driving and medical imaging.",u:"https://arxiv.org/abs/1311.2524",ts:"2:21:40",s:8500},
  {n:6,t:"Transformer — Attention Is All You Need",m:"Vaswani et al., 2017",d:"Dropped recurrence and convolution, keeping only attention — making training massively parallel. The single architecture beneath GPT, BERT, CLIP, ViT and diffusion: essentially all frontier AI.",u:"https://arxiv.org/abs/1706.03762",ts:"2:22:02",s:8522},
  {n:7,t:"Attention",m:"Bahdanau, Cho & Bengio, 2014",d:"Introduced the attention mechanism for machine translation: instead of cramming a sentence into one vector, let the model look back at the relevant words. The seed Transformers later scaled into everything.",u:"https://arxiv.org/abs/1409.0473",ts:"~2:22:04",s:8524,flag:"⚠️ ASR-garbled as “Tension Solution Unit” — decoded below"},
  {n:8,t:"GPT-3",m:"Brown et al., 2020",d:"At 175B parameters it showed scale alone unlocks emergent few-shot ability — describe a task in the prompt and it just does it. The empirical proof of the scaling-law thesis and ancestor of ChatGPT.",u:"https://arxiv.org/abs/2005.14165",ts:"2:22:02",s:8522},
- {n:9,t:"BERT",m:"Devlin et al., 2018",d:"Bidirectional masked-language pretraining — hide words, predict them from both sides. It swept NLP, made ‘pretrain then fine-tune’ standard, and directly inspired Xie's own MAE for images.",u:"https://arxiv.org/abs/1810.04805",ts:"2:22:02",s:8522},
+ {n:9,t:"BERT",m:"Devlin et al., 2018",d:"Bidirectional masked-language pretraining — hide words, predict them from both sides. It swept NLP, made ‘pretrain then fine-tune’ standard, and directly inspired Saining's own MAE for images.",u:"https://arxiv.org/abs/1810.04805",ts:"2:22:02",s:8522},
  {n:10,t:"CLIP",m:"Radford et al., 2021",d:"Trained on 400M image–text pairs to align pictures and language in one space, enabling zero-shot classification and becoming the visual backbone of the text-to-image era.",u:"https://arxiv.org/abs/2103.00020",ts:"2:22:02",s:8522},
  {n:11,t:"ViT — Vision Transformer",m:"Dosovitskiy et al., 2020",d:"Showed a plain Transformer fed image patches as tokens beats CNNs once data and compute are large enough — unifying vision and language under one architecture.",u:"https://arxiv.org/abs/2010.11929",ts:"2:22:14",s:8534},
  {n:12,t:"GAN",m:"Goodfellow et al., 2014",d:"A generator and discriminator locked in a minimax game — the framework that first made photorealistic synthesis possible and dominated generative modeling before diffusion.",u:"https://arxiv.org/abs/1406.2661",ts:"2:22:14",s:8534},
@@ -226,20 +226,20 @@ const tier1=[
 ];
 const tier2=[
  {t:"Deeply-Supervised Nets (DSN)",m:"2015",d:"‘Deep supervision’ — attach losses to intermediate layers so gradients reach early ones directly. A recurring motif: he notes REPA is structurally a deeply-supervised net.",u:"https://arxiv.org/abs/1409.5185",ts:"0:48:53",s:2933},
- {t:"HED — Holistically-Nested Edge Detection",m:"2015",d:"Reframed edge detection as image-to-image prediction with multi-scale deep supervision. The PhD work he says he's ‘proud of’.",u:"https://arxiv.org/abs/1504.06375",ts:"0:48:28",s:2908},
+ {t:"HED — Holistically-Nested Edge Detection",m:"2015",d:"Reframed edge detection as image-to-image prediction with multi-scale deep supervision. A PhD-era project Saining is especially fond of.",u:"https://arxiv.org/abs/1504.06375",ts:"0:48:28",s:2908},
  {t:"ResNeXt",m:"2017",d:"Added ‘cardinality’ — parallel grouped transformations — as a new scaling axis. Kaiming He named it (‘X = next, next-gen ResNet’); it placed 2nd in the ImageNet challenge.",u:"https://arxiv.org/abs/1611.05431",ts:"1:00:39",s:3639},
- {t:"DiT — Diffusion Transformers",m:"2023 · self-rated “0.25”",d:"Replaced the U-Net in diffusion with a Transformer, so image generators inherit LLM-style scaling. The backbone behind Sora — though he modestly downgrades it.",u:"https://arxiv.org/abs/2212.09748",ts:"2:20:41",s:8441},
+ {t:"DiT — Diffusion Transformers",m:"2023 · self-rated “0.25”",d:"Replaced the U-Net in diffusion with a Transformer, so image generators inherit LLM-style scaling. The backbone behind Sora.",u:"https://arxiv.org/abs/2212.09748",ts:"2:20:41",s:8441},
  {t:"SiT — Scalable Interpolant Transformers",m:"2024",d:"Recasts DiT through stochastic interpolants / flow matching — a more flexible, often stronger formulation, now a common academic baseline alongside DiT.",u:"https://arxiv.org/abs/2401.08740",ts:"3:15:25",s:11725},
  {t:"MoCo — Momentum Contrast",m:"2020",d:"A large, consistent dictionary for contrastive self-supervised learning — the first time self-supervised features rivaled supervised ImageNet pretraining. (Kaiming-led.)",u:"https://arxiv.org/abs/1911.05722",ts:"2:25:59",s:8759},
  {t:"MAE — Masked Autoencoders",m:"2022",d:"Mask 75% of an image and reconstruct it — a simple, scalable self-supervised recipe bringing BERT's idea to vision. (Kaiming-led.)",u:"https://arxiv.org/abs/2111.06377",ts:"2:26:45",s:8805},
- {t:"Cambrian-1",m:"2024",d:"A vision-centric multimodal LLM and study of how visual representations should connect to language models — his case that vision deserves first-class treatment.",u:"https://arxiv.org/abs/2406.16860",ts:"3:15:51",s:11751},
- {t:"REPA — Representation Alignment",m:"2025",d:"Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding training. ‘Another keyword: representation,’ he laughs.",u:"https://arxiv.org/abs/2410.06940",ts:"4:01:06",s:14466},
+ {t:"Cambrian-1",m:"2024",d:"A vision-centric multimodal LLM and study of how visual representations should connect to language models — Saining's case that vision deserves first-class treatment.",u:"https://arxiv.org/abs/2406.16860",ts:"3:15:51",s:11751},
+ {t:"REPA — Representation Alignment",m:"2025",d:"Align a diffusion Transformer's internal features to a strong self-supervised encoder, dramatically speeding training. ‘Another keyword: representation,’ as Saining puts it.",u:"https://arxiv.org/abs/2410.06940",ts:"4:01:06",s:14466},
  {t:"RAE — Representation Autoencoder",m:"2025",d:"Use a powerful pretrained representation as the generative model's encoder/foundation — pushing the ‘representation-first’ thesis one step further.",u:"https://arxiv.org/abs/2510.11690",ts:"4:02:48",s:14568}
 ];
 const tier3=[
- {t:"Dyna",m:"Sutton, 1991",d:"Sutton's model-based RL architecture — learn a world model and plan with it. The reactive vs. model-based “System 1 / System 2” framing Xie invokes.",u:"https://dl.acm.org/doi/10.1145/122344.122377",ts:"4:15:20",s:15320},
- {t:"The Bitter Lesson",m:"Sutton, 2019 · essay",d:"General methods that scale with compute beat hand-crafted knowledge. Xie's foil — he argues LLMs are “anti–Bitter Lesson.”",u:"http://www.incompleteideas.net/IncIdeas/BitterLesson.html",ts:"4:10:33",s:15033},
- {t:"JEPA",m:"LeCun, 2022",d:"LeCun's blueprint for autonomous machine intelligence — predict in abstract representation space, not pixels or tokens. AMI Labs' north star.",u:"https://openreview.net/forum?id=BZ5a1r-kVsf",ts:"6:03:10",s:21790},
+ {t:"Dyna",m:"Sutton, 1991",d:"Sutton's model-based RL architecture — learn a world model and plan with it. The reactive vs. model-based “System 1 / System 2” framing Saining invokes.",u:"https://dl.acm.org/doi/10.1145/122344.122377",ts:"4:15:20",s:15320,img:"assets/figures/dyna.png"},
+ {t:"The Bitter Lesson",m:"Sutton, 2019 · essay",d:"General methods that scale with compute beat hand-crafted knowledge. Saining's foil — he argues LLMs are “anti–Bitter Lesson.”",u:"http://www.incompleteideas.net/IncIdeas/BitterLesson.html",ts:"4:10:33",s:15033,img:"assets/figures/bitter.png"},
+ {t:"JEPA",m:"LeCun, 2022",d:"LeCun's blueprint for autonomous machine intelligence — predict in abstract representation space, not pixels or tokens. AMI Labs' north star.",u:"https://openreview.net/forum?id=BZ5a1r-kVsf",ts:"6:03:10",s:21790,img:"assets/figures/jepa.png"},
  {t:"Genie",m:"DeepMind, 2024",d:"A foundation world model trained from unlabeled internet videos that generates playable, interactive environments.",u:"https://arxiv.org/abs/2402.15391",ts:"4:26:52",s:16012,img:"assets/figures/genie.png"},
  {t:"U-Net",m:"Ronneberger et al., 2015",d:"Encoder–decoder with skip connections for image-to-image tasks — the diffusion backbone DiT replaced.",u:"https://arxiv.org/abs/1505.04597",ts:"3:04:00",s:11040,img:"assets/figures/unet.png"},
  {t:"CPC",m:"van den Oord et al., 2018",d:"Contrastive Predictive Coding — learn representations by predicting the future in a latent space; an early self-supervised milestone.",u:"https://arxiv.org/abs/1807.03748",ts:"2:00:27",s:7227,img:"assets/figures/cpc.png"},
